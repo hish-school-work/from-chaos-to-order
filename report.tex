@@ -77,20 +77,42 @@ Strange attractors reveal that even in chaotic systems, there is an underlying s
 \subsection{What are fractals?}
 Fractals are complex shapes with self-similarity, meaning they look similar at different scales of magnification. In Chaos Theory, fractals help describe the repeating patterns and hidden structures found in chaotic systems, like strange attractors. The idea of fractals transformed how scientists visualize and understand complexity, allowing them to model natural systems, from coastlines and mountains to clouds and even plant growth.
 
-\subsection{How did fractals change the way we understand and visualize nature?}
-Fractals gave scientists and artists new tools to create detailed, realistic representations of natural forms. By using fractals, scientists can model complex structures in nature that are otherwise difficult to describe, such as clouds, forests, and mountains. Fractals show how simple rules can create endless complexity, mirroring the way Chaos Theory explains patterns within chaotic systems.
-
 \subsection{What is self-similarity in fractals?}
-TODO
+Self-similarity in fractals means that the same patterns repeat at different scales. No matter how much you zoom in or out, you will see similar shapes and structures. For example, the branches of a tree look like smaller versions of the entire tree, and this is a form of self-similarity. In fractals, this property shows how simple rules can create complex and repeating structures.
 
 \subsection{How do fractals exhibit infinite detail?}
-TODO
+Fractals exhibit infinite detail because their patterns continue to repeat endlessly, no matter how much you zoom in. Each part of the fractal reveals smaller and smaller structures that look similar to the whole. This means you can keep exploring deeper levels of a fractal, and there will always be more intricate details to discover. This infinite complexity makes fractals useful for modeling natural systems like coastlines, mountains, and clouds.
 
 \subsection{What is fractal dimension?}
+Fractal dimension is a way of measuring how complex a fractal is. Unlike regular shapes like lines (1D), squares (2D), or cubes (3D), fractals can have dimensions that are not whole numbers. For example, a fractal might have a dimension of 1.5, meaning it is more than a line but less than a flat surface. This helps describe how much space a fractal's pattern fills as you zoom in. Fractal dimension shows the unique, in-between nature of fractals and their ability to capture complexity.
+
+\subsection{How can we calculate the fractal dimension of a shape?}
+To calculate the fractal dimension of a shape, we use methods that measure how the pattern changes as we zoom in or increase the scale. One common method is the box-counting method:
+\begin{itemize}
+    \item Cover the fractal with a grid of equally sized boxes.
+    \item Count how many boxes contain part of the fractal.
+    \item Repeat this process with smaller and smaller boxes.
+    \item Use the formula \( D = \frac{\log(N)}{\log(1/r)} \), where \( N \) is the number of boxes that contain part of the fractal, and \( r \) is the size of each box relative to the original grid.
+\end{itemize}
+
+\subsubsection{Example}
 TODO
 
-\subsection{What are the mathematical tools used in fractal geometry?}
-TODO
+\subsection{How do fractals work mathematically?}
+Fractals are created using iterative processes, which means repeating a simple rule over and over. Mathematically, this is often done using equations or algorithms that generate self-similar patterns. Here’s how it works:
+\begin{itemize}
+    \item Start with a basic shape or rule, called the "seed." For example, a straight line can be the starting point.
+    \item Apply a transformation to the seed, such as bending, splitting, or scaling it.
+    \item Repeat the transformation multiple times. Each step creates a new, more detailed version of the fractal.
+\end{itemize}
+
+For example, the famous Koch snowflake starts with an equilateral triangle. In each iteration, the middle third of each line segment is replaced with two segments forming a smaller triangle. Repeating this process indefinitely creates a fractal with infinite detail and a finite area.
+
+Fractals also rely on recursive mathematical functions, such as:
+\[
+z_{n+1} = z_n^2 + c
+\]
+This equation generates fractals like the Mandelbrot set by iterating \( z \) and plotting the result. The repeated application of rules creates the complexity and self-similarity seen in fractals, showing how simple math can lead to infinite beauty.
 
 \subsection{How are iterated maps used to generate fractals?}
 TODO
