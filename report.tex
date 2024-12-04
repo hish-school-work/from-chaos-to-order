@@ -4,6 +4,7 @@
 \doublespacing
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{hyperref}
 
 \title{From Chaos to Order\\
@@ -35,7 +36,7 @@ I will begin by providing the background you will need to understand the mathema
 \tableofcontents
 
 \section{Background}
-To appreciate Chaos Theory and Fractals, it is essential to understand some fundamental concepts in mathematics and systems theory.
+
 
 \subsection{Functions and Systems}
 A function is a mathematical rule that assigns each input exactly one output. Functions are foundational in describing relationships between variables. For example, \( f(x) = x + 2 \) maps the input \( x = 3 \) to the output \( f(3) = 5 \).
@@ -49,6 +50,7 @@ In contrast, complex systems consist of numerous interconnected components whose
 
 \section{Introduction}
 
+
 \subsection{Chaos Theory}
 Chaos theory is the study of complex systems that appear random, but in reality are governed by underlying deterministic laws. This means that even though their behavior seems unpredictable, it's driven by precise rules. The key feature of chaos is "sensitivity to initial conditions," meaning tiny changes at the start can lead to vastly different outcomes. This phenomenon is also known as the "butterfly effect."
 
@@ -60,7 +62,6 @@ Classical mechanics is the study of systems that behave in a predictable way, li
 
 This sensitivity to initial conditions is what sets chaotic systems apart from the predictable systems studied in classical mechanics. Chaos Theory helps us understand that just because a system has rules doesn’t mean it’s easy to predict, especially when those rules cause big changes from tiny variations.
 
-
 \subsection{Attractors in Dynamical Systems}
 An attractor is a pattern or path that a system’s motion tends to follow over time. In classical mechanics, an attractor can be a single point (like an object that has come to a complete stop), a closed loop (a repeating cycle), or a torus (a combination of cycles). Attractors help scientists visualize the behavior of systems and see if they tend toward stable and predictable paths.
 
@@ -70,41 +71,36 @@ Strange attractors are a special type of attractor found in chaotic systems. Unl
 Strange attractors reveal that even in chaotic systems, there is an underlying structure that governs their behavior. These attractors create intricate patterns that appear random at first but show order upon closer examination. A key feature of strange attractors is their self-similarity, meaning their patterns repeat at different scales. This "self-similarity" shows that chaotic systems have repeating structures, even in their randomness. These detailed patterns in strange attractors gave rise to the concept of fractals.
 
 \section{Fractal Geometry}
-\subsection{Understanding Fractals}
-Fractals are complex shapes with self-similarity, meaning they look similar at different scales of magnification. In Chaos Theory, fractals help describe the repeating patterns and hidden structures found in chaotic systems, like strange attractors. The idea of fractals transformed how scientists visualize and understand complexity, allowing them to model natural systems, from coastlines and mountains to clouds and even plant growth.
 
-\subsection{What is self-similarity in fractals?}
+
+\subsection{Understanding Fractals}
+Fractals are complex shapes with self-similarity, meaning they look similar at different scales of magnification. This means that each part of a fractal resembles the whole, creating patterns that repeat infinitely. Fractals are used to model naturally occurring structures that are too irregular for traditional Euclidean geometry. In Chaos Theory, fractals help describe the repeating patterns and hidden structures found in chaotic systems, like strange attractors. 
+
+\subsection{Self-Similarity in Fractals}
 Self-similarity in fractals means that the same patterns repeat at different scales. No matter how much you zoom in or out, you will see similar shapes and structures. For example, the branches of a tree look like smaller versions of the entire tree, and this is a form of self-similarity. In fractals, this property shows how simple rules can create complex and repeating structures.
 
-\subsection{How do fractals exhibit infinite detail?}
+\subsection{Infinite Detail}
 Fractals exhibit infinite detail because their patterns continue to repeat endlessly, no matter how much you zoom in. Each part of the fractal reveals smaller and smaller structures that look similar to the whole. This means you can keep exploring deeper levels of a fractal, and there will always be more intricate details to discover. This infinite complexity makes fractals useful for modeling natural systems like coastlines, mountains, and clouds.
-
-\subsection{What is fractal dimension?}
-Fractal dimension is a way of measuring how complex a fractal is. Unlike regular shapes like lines (1D), squares (2D), or cubes (3D), fractals can have dimensions that are not whole numbers. For example, a fractal might have a dimension of 1.5, meaning it is more than a line but less than a flat surface. This helps describe how much space a fractal's pattern fills as you zoom in. Fractal dimension shows the unique, in-between nature of fractals and their ability to capture complexity.
 
 \section{Mathematics of Fractals}
 
-\subsection{How to calculate the fractal dimension of a shape?}
-Fractal dimension measures how a fractal scales differently from traditional shapes like lines, squares, or cubes. The key idea is to understand how the number of parts (\(N\)) changes as the size of each part (\(\varepsilon\)) is scaled. The fractal dimension (\(D\)) is calculated using the formula:
+\subsection{The fractal dimension}
+Fractal dimension is a way of measuring how complex a fractal is. Unlike regular shapes like lines (1D), squares (2D), or cubes (3D), fractals can have dimensions that are not whole numbers. For example, a fractal might have a dimension of 1.5, meaning it is more than a line but less than a flat surface. 
+
 \[
-D = \frac{\log(N)}{\log(1/\varepsilon)}.
+D = \frac{\log(N)}{\log(1/\varepsilon)}
 \]
 
+Where \( N \) is the number of self-similar pieces, and \( \varepsilon \) is the scaling factor.
+
 \subsubsection{Example}
-\begin{enumerate}
-    \item For a simple line:
-	\begin{enumerate}
-		\item Divide the line into smaller segments of size \(1/3\).
-		\item You’ll find \(N = 3\), so \(D = 1\) (a one-dimensional shape).
-\end{enumerate}
-    \item For a fractal, like the Koch snowflake:
+For a fractal, like the Koch snowflake:
 	\begin{enumerate}
 		\item Divide into segments of size \(1/3\).
 		\item You’ll find \(N = 4\), so \(D = \frac{\log(4)}{\log(3)} \approx 1.2619\).
 		\item This non-integer dimension reflects the fractal's complexity, lying between one and two dimensions.
 	\end{enumerate}
-\end{enumerate}
-
+\begin{figure}[H] \centering \includegraphics[width=0.36\textwidth]{assets/KochFlake.png} \caption{The first four iterations of the Koch snowflake} \label{fig:example} \end{figure}
 
 \subsection{How do fractals work mathematically?}
 Fractals are created using iterative processes, which means repeating a simple rule over and over. Mathematically, this is often done using equations or algorithms that generate self-similar patterns. Here’s how it works:
