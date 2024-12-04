@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage[margin=1in]{geometry} % Sets all margins to 1 inch
+\usepackage[margin=1in]{geometry}
 \usepackage{setspace}
 \doublespacing
 \usepackage{amsmath}
@@ -33,6 +33,9 @@ I will begin by providing the background you will need to understand the mathema
 \newpage
 
 \tableofcontents
+
+\section{Introduction}
+Chaos Theory and Fractal Geometry are two interrelated fields that revolutionize our understanding of complex systems and patterns in nature. Chaos Theory examines how deterministic systems can exhibit unpredictable behavior due to sensitivity to initial conditions, often referred to as the "butterfly effect." Fractal Geometry, introduced by Benoît Mandelbrot, describes shapes that display self-similarity and infinite complexity. Together, these theories provide powerful tools for modeling and analyzing the intricate structures and dynamics observed in the natural world.
 
 \section{Background}
 
@@ -86,6 +89,8 @@ Fractals exhibit infinite detail because their patterns continue to repeat endle
 \subsection{What is fractal dimension?}
 Fractal dimension is a way of measuring how complex a fractal is. Unlike regular shapes like lines (1D), squares (2D), or cubes (3D), fractals can have dimensions that are not whole numbers. For example, a fractal might have a dimension of 1.5, meaning it is more than a line but less than a flat surface. This helps describe how much space a fractal's pattern fills as you zoom in. Fractal dimension shows the unique, in-between nature of fractals and their ability to capture complexity.
 
+\section{Mathematics of Fractals}
+
 \subsection{How to calculate the fractal dimension of a shape?}
 Fractal dimension measures how a fractal scales differently from traditional shapes like lines, squares, or cubes. The key idea is to understand how the number of parts (\(N\)) changes as the size of each part (\(\varepsilon\)) is scaled. The fractal dimension (\(D\)) is calculated using the formula:
 \[
@@ -93,18 +98,20 @@ D = \frac{\log(N)}{\log(1/\varepsilon)}.
 \]
 
 \subsubsection{Example}
-1. For a simple line:
-   - Divide the line into smaller segments of size \(1/3\).
-   - You’ll find \(N = 3\), so \(D = 1\) (a one-dimensional shape).
+\begin{enumerate}
+    \item For a simple line:
+	\begin{enumerate}
+		\item Divide the line into smaller segments of size \(1/3\).
+		\item You’ll find \(N = 3\), so \(D = 1\) (a one-dimensional shape).
+\end{enumerate}
+    \item For a fractal, like the Koch snowflake:
+	\begin{enumerate}
+		\item Divide into segments of size \(1/3\).
+		\item You’ll find \(N = 4\), so \(D = \frac{\log(4)}{\log(3)} \approx 1.2619\).
+		\item This non-integer dimension reflects the fractal's complexity, lying between one and two dimensions.
+	\end{enumerate}
+\end{enumerate}
 
-2. For a square:
-   - Divide it into smaller squares of side length \(1/3\).
-   - You’ll find \(N = 9\), so \(D = 2\) (a two-dimensional shape).
-
-3. For a fractal, like the Koch snowflake:
-   - Divide into segments of size \(1/3\).
-   - You’ll find \(N = 4\), so \(D = \frac{\log(4)}{\log(3)} \approx 1.2619\).
-   - This non-integer dimension reflects the fractal's complexity, lying between one and two dimensions.
 
 \subsection{How do fractals work mathematically?}
 Fractals are created using iterative processes, which means repeating a simple rule over and over. Mathematically, this is often done using equations or algorithms that generate self-similar patterns. Here’s how it works:
