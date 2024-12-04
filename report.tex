@@ -83,9 +83,21 @@ Self-similarity in fractals means that the same patterns repeat at different sca
 \subsection{Infinite Detail}
 Fractals exhibit infinite detail because their patterns continue to repeat endlessly, no matter how much you zoom in. Each part of the fractal reveals smaller and smaller structures that look similar to the whole. This means you can keep exploring deeper levels of a fractal, and there will always be more intricate details to discover. This infinite complexity makes fractals useful for modeling natural systems like coastlines, mountains, and clouds.
 
+\subsection{Benoît Mandelbrot and the Birth of Fractal Geometry}
+Benoît Mandelbrot, a Polish-born French-American mathematician, is renowned for founding the field of Fractal Geometry. In 1982, Mandelbrot published his groundbreaking book, \emph{The Fractal Geometry of Nature}, which introduced the concept of fractals to a wider audience. His groundbreaking work demonstrated that many natural phenomena, such as coastlines, clouds, and mountain ranges, possess fractal characteristics. 
+
+Mandelbrot's most famous contribution is the Mandelbrot Set, a set of complex numbers that produces a highly intricate and infinitely detailed boundary when plotted. This set not only visualizes the beauty of fractals but also provides deep insights into the behaviour of dynamical systems.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{assets/mandelbrot-set.jpg}
+\caption{The Mandelbrot Set: A quintessential example of a fractal.}
+\label{fig:mandelbrot}
+\end{figure}
+
 \section{Mathematics of Fractals and Chaos}
 
-\subsection{The fractal dimension}
+\subsection{The Fractal Dimension}
 Fractal dimension is a way of measuring how complex a fractal is. Unlike regular shapes like lines (1D), squares (2D), or cubes (3D), fractals can have dimensions that are not whole numbers. For example, a fractal might have a dimension of 1.5, meaning it is more than a line but less than a flat surface. 
 
 \[
@@ -181,6 +193,14 @@ x_{n+1} = r x_n (1 - x_n)
 \]
 As the parameter \( r \) increases, the system transitions from stable fixed points to periodic cycles and eventually to chaotic behavior. Bifurcation theory helps explain these transitions, showing how simple systems can develop complex and chaotic dynamics.
 
+\subsection{Lyapunov Exponents: Measuring Chaos}
+Lyapunov exponents quantify the rate at which nearby trajectories in a dynamical system diverge. A positive Lyapunov exponent indicates chaos, as it signifies exponential divergence of initially close states.
+
+\[
+\lambda = \lim_{t \to \infty} \frac{1}{t} \ln \frac{d(t)}{d(0)}
+\]
+
+Where \( d(t) \) is the distance between two trajectories at time \( t \). If \( \lambda > 0 \), the system is chaotic.
 
 \section{Fractals in Nature}
 \subsection{How do chaotic processes contribute to fractal patterns in nature?}
