@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage[margin=1in]{geometry}
+\usepackage[letterpaper, margin=1in]{geometry}
 \usepackage{setspace}
 \doublespacing
 \usepackage{graphicx}
@@ -95,6 +95,8 @@ Mandelbrot's most famous contribution is the Mandelbrot Set, a set of complex nu
 \label{fig:mandelbrot}
 \end{figure}
 
+\newpage
+
 \section{Mathematics of Fractals and Chaos}
 
 
@@ -178,6 +180,8 @@ As the parameter \( r \) increases, the system undergoes a series of bifurcation
 \label{fig:bifurcation}
 \end{figure}
 
+\newpage
+
 \subsection{Lyapunov Exponents: Measuring Chaos}
 Lyapunov exponents quantify the rate at which nearby trajectories in a dynamical system diverge. A positive Lyapunov exponent indicates chaos, as it signifies sensitive dependence on initial conditions. Mathematically, the Lyapunov exponent \( \lambda \) is defined as:
 \[
@@ -186,12 +190,12 @@ Lyapunov exponents quantify the rate at which nearby trajectories in a dynamical
 where \( d(t) \) is the distance between two trajectories at time \( t \). If \( \lambda > 0 \), the system is chaotic, meaning that small differences in initial conditions can lead to vastly different outcomes over time. This measure is crucial for identifying and characterizing chaotic behavior in various systems, from weather patterns to financial markets.
 
 \section{Applications of Fractals}
-Fractal patterns in nature often emerge from chaotic processes. These processes involve complex interactions that, while deterministic, produce highly intricate and self-similar structures. For example, clouds, 
+Fractal patterns in nature often emerge from chaotic processes. These processes involve complex interactions that, while deterministic, produce highly intricate and self-similar structures. For example, clouds, coastlines, trees, and mountains all exhibit fractal-like patterns as a result of these chaotic interactions.
+
+\newpage
 
 \subsection{Motion of clouds is fractal-like}
-Clouds are dynamic structures that exhibit fractal-like motion, characterized by self-similar patterns and intricate shapes at various scales. This fractal motion arises from the complex interactions between atmospheric forces, such as wind, temperature, and humidity, which govern the formation and evolution of cloud structures.
-
-The self-similarity of clouds means that smaller sections of a cloud resemble the overall shape, creating a recursive pattern that persists as the cloud moves and changes form. This property allows meteorologists to model cloud dynamics more accurately, improving weather prediction and climate models.
+Clouds are dynamic structures that exhibit fractal-like motion, characterized by self-similar patterns and intricate shapes at various scales. This fractal motion arises from the complex interactions between atmospheric forces, such as wind, temperature, and humidity, which govern the formation and evolution of cloud structures. This property allows meteorologists to model cloud dynamics more accurately, improving weather prediction and climate models.
 
 \begin{figure}[H]
 \centering
@@ -230,25 +234,45 @@ The branching patterns of trees are quintessential examples of natural fractals.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth]{assets/fractal-tree.jpg}
+\includegraphics[width=\textwidth]{assets/fractal-tree.jpg}
 \caption{Fractal tree.}
 \label{fig:fractal-tree}
 \end{figure}
+
+\newpage
 
 \subsection{Mountain ranges are fractals}
 Mountain ranges display fractal structures, reflecting the complex geological processes that shape them. The roughness and unevenness of mountain terrains are consistent with fractal geometry, where smaller features mirror the overall shape of the mountains. This fractal nature aids in understanding erosion patterns, tectonic activity, and the formation of mountain landscapes.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth]{assets/fractal-jasper.png}
+\includegraphics[width=\textwidth]{assets/fractal-jasper.png}
 \caption{Jasper National Park.}
 \label{fig:fractal-jasper}
 \end{figure}
 
+\newpage
+
+\subsection{Weather Patterns}
+Weather systems are inherently chaotic and exhibit fractal characteristics. Cloud formations, storm systems, and atmospheric turbulence display self-similar patterns that can be modeled using fractal geometry. Understanding the fractal nature of weather helps meteorologists improve weather prediction models by accounting for the complexity and variability inherent in atmospheric dynamics.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{assets/vonkarman-clouds.jpg}
+\caption{Von Karman clouds.}
+\label{fig:vonkarman-clouds}
+\end{figure}
+
+\newpage
+
 \section{Conclusion}
-TODO
+Chaos Theory and Fractal Geometry provide powerful tools to understand the complex patterns found in nature. We explored how small changes can lead to big differences in chaotic systems and how fractals reveal self-similar structures in coastlines, trees, mountains, and clouds. These mathematical concepts help us see the hidden order within seemingly random processes.
 
+By studying fractals and chaos, we gain a deeper appreciation for the intricate beauty of the natural world. These ideas not only explain natural phenomena but also have practical applications in areas like technology, medicine, and finance. Understanding the balance between chaos and order allows us to better predict and navigate the complexities of our environment.
 
+In essence, Chaos Theory and Fractal Geometry show that even in disorder, there is structure and beauty to be discovered.
+
+\newpage
 
 \nocite{*} 
 \bibliographystyle{plain} 
