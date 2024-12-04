@@ -88,7 +88,7 @@ Benoît Mandelbrot, a Polish-born French-American mathematician, is renowned for
 
 Mandelbrot's most famous contribution is the Mandelbrot Set, a set of complex numbers that produces a highly intricate and infinitely detailed boundary when plotted. This set not only visualizes the beauty of fractals but also provides deep insights into the behaviour of dynamical systems.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth]{assets/mandelbrot-set.jpg}
 \caption{The Mandelbrot Set: A quintessential example of a fractal.}
@@ -146,7 +146,7 @@ f_3(x, y) = \left( \frac{x}{2} + \frac{1}{4}, \frac{y}{2} + \frac{\sqrt{3}}{4} \
 
 After numerous iterations, the points will approximate the Sierpiński Triangle, revealing its self-similar structure. \href{https://cs.lmu.edu/~ray/notes/ifs/}{Test it out for yourself.}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth]{assets/sierpinski-triangle.png}
 \caption{Sierpiński Triangle generated using Iterated Function Systems.}
@@ -171,7 +171,7 @@ x_{n+1} = r x_n (1 - x_n)
 \]
 As the parameter \( r \) increases, the system undergoes a series of bifurcations where the number of stable points doubles, leading from stable fixed points to periodic cycles and eventually to chaotic behavior. For instance, at \( r \approx 3.56995 \), the system transitions to chaos, exhibiting unpredictable and aperiodic behavior. Bifurcation theory helps explain how deterministic systems can become chaotic, highlighting the intricate balance between order and disorder.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth]{assets/bifurcation.png}
 \caption{Bifurcation diagram for the logistic map.}
@@ -193,14 +193,37 @@ Clouds are dynamic structures that exhibit fractal-like motion, characterized by
 
 The self-similarity of clouds means that smaller sections of a cloud resemble the overall shape, creating a recursive pattern that persists as the cloud moves and changes form. This property allows meteorologists to model cloud dynamics more accurately, improving weather prediction and climate models.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth]{assets/fractal-clouds.jpg}
 \caption{Fractal Motion of Clouds.}
 \label{fig:fractal-clouds}
 \end{figure}
 
+\subsection{Coastlines}
+Coastlines exhibit fractal-like irregularities, where the complexity of their shape increases as the measurement scale becomes finer. This self-similar property means that the jaggedness of a coastline appears similar at various levels of magnification. Fractal geometry helps in modeling and understanding the intricate boundaries of coastlines, which are influenced by factors like erosion and tidal forces.
 
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{assets/uk2.jpg}
+        \label{fig:uk2}
+    \end{minipage}
+    \hspace{0.05\textwidth} % Adds space between images
+    \begin{minipage}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{assets/uk3.jpg}
+        \label{fig:uk3}
+    \end{minipage}
+    \hspace{0.05\textwidth} % Adds space between images
+    \begin{minipage}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{assets/uk4.jpg}
+        \label{fig:uk4}
+    \end{minipage}
+        \caption{self-similarity of the coastline of Britain}
+\end{figure}
 
 
 \section{Conclusion}
