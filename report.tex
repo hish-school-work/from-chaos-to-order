@@ -91,7 +91,7 @@ Mandelbrot's most famous contribution is the Mandelbrot Set, a set of complex nu
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{assets/mandelbrot-set.jpg}
-\caption{\textbf{Credit:} \href{https://en.wikipedia.org/wiki/Mandelbrot_set\#/media/File:Mandel_zoom_00_mandelbrot_set.jpg}{Mandelbrot Set on Wikipedia}}
+\caption{\textbf{Credit:} \href{https://en.wikipedia.org/wiki/Mandelbrot_set\#/media/File:Mandel_zoom_00_mandelbrot_set.jpg}{Mandelbrot Set on Wikipedia.}}
 \label{fig:mandelbrot}
 \end{figure}
 
@@ -115,7 +115,12 @@ Where \( N \) is the number of self-similar pieces, and \( \varepsilon \) is the
 		\item You’ll find \(N = 4\), so \(D = \frac{\log(4)}{\log(3)} \approx 1.2619\).
 		\item This non-integer dimension reflects the fractal's complexity, lying between one and two dimensions.
 	\end{enumerate}
-\begin{figure}[H] \centering \includegraphics[width=0.36\textwidth]{assets/KochFlake.png} \caption{The first four iterations of the Koch snowflake} \label{fig:example} \end{figure}
+\begin{figure}[H] 
+\centering 
+\includegraphics[width=0.36\textwidth]{assets/KochFlake.png} 
+\caption{\textbf{Credit:} \href{https://en.wikipedia.org/wiki/Koch_snowflake\#/media/File:KochFlake.svg}{The first four iterations of the Koch snowflake on Wikipedia.}}
+\label{fig:example} 
+\end{figure}
 
 \subsection{Iterated Function Systems (IFS)}
 Iterated Function Systems are a powerful method for generating fractals through the repeated application of a finite set of contraction mappings. Each mapping transforms the fractal in a specific way, and by iterating these transformations, complex self-similar patterns emerge.
@@ -146,23 +151,23 @@ f_3(x, y) = \left( \frac{x}{2} + \frac{1}{4}, \frac{y}{2} + \frac{\sqrt{3}}{4} \
     \item Step 3: Repeat Step 2 iteratively, plotting each new point.
 \end{itemize}
 
-After numerous iterations, the points will approximate the Sierpiński Triangle, revealing its self-similar structure. \href{https://cs.lmu.edu/~ray/notes/ifs/}{Test it out for yourself.}
+After numerous iterations, the points will approximate the Sierpiński Triangle, revealing its self-similar structure. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth]{assets/sierpinski-triangle.png}
-\caption{Sierpiński Triangle generated using Iterated Function Systems.}
+\caption{\textbf{Credit:} Sierpiński Triangle generated using \href{https://cs.lmu.edu/~ray/notes/ifs/}{IFS Renderer}.}
 \label{fig:sierpinski}
 \end{figure}
 
 \subsection{Iterated Maps}
 Iterated maps are mathematical functions applied repeatedly to a value or set of values. They are fundamental in studying dynamical systems and generating fractals. An iterated map can be expressed as:
 \[
-x_{n+1} = f(x_n)
+x_{n+1} = f(x_n),
 \]
 where \( f \) is a function defining the system's rules. For example, the logistic map is a simple iterated map given by:
 \[
-x_{n+1} = r x_n (1 - x_n)
+x_{n+1} = r x_n (1 - x_n),
 \]
 where \( r \) is a parameter. As \( r \) varies, the behaviour of the map changes, demonstrating transitions from stable points to chaotic dynamics. 
 
@@ -176,7 +181,7 @@ As the parameter \( r \) increases, the system undergoes a series of bifurcation
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\textwidth]{assets/bifurcation.png}
-\caption{Bifurcation diagram for the logistic map.}
+\caption{\textbf{Credit:} \href{https://en.wikipedia.org/wiki/Logistic_map\#/media/File:Logistic_Bifurcation_map_High_Resolution.png}{Bifurcation diagram for the logistic map on Wikipedia.}}
 \label{fig:bifurcation}
 \end{figure}
 
@@ -185,7 +190,7 @@ As the parameter \( r \) increases, the system undergoes a series of bifurcation
 \subsection{Lyapunov Exponents: Measuring Chaos}
 Lyapunov exponents quantify the rate at which nearby trajectories in a dynamical system diverge. A positive Lyapunov exponent indicates chaos, as it signifies sensitive dependence on initial conditions. Mathematically, the Lyapunov exponent \( \lambda \) is defined as:
 \[
-\lambda = \lim_{t \to \infty} \frac{1}{t} \ln \frac{d(t)}{d(0)}
+\lambda = \lim_{t \to \infty} \frac{1}{t} \ln \frac{d(t)}{d(0)} ,
 \]
 where \( d(t) \) is the distance between two trajectories at time \( t \). If \( \lambda > 0 \), the system is chaotic, meaning that small differences in initial conditions can lead to vastly different outcomes over time. This measure is crucial for identifying and characterizing chaotic behaviour in various systems, from weather patterns to financial markets.
 
@@ -203,7 +208,7 @@ Clouds are dynamic structures that exhibit fractal-like motion, characterized by
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\textwidth]{assets/fractal-clouds.jpg}
-\caption{Fractal Motion of Clouds.}
+\caption{Fractal Motion of Clouds. \textbf{Credit:} \href{https://eoimages.gsfc.nasa.gov/images/imagerecords/0/625/vortex_lg.jpg}{NASA Earth Observatory}}
 \label{fig:fractal-clouds}
 \end{figure}
 
@@ -229,7 +234,7 @@ Coastlines exhibit fractal-like irregularities, where the complexity of their sh
         \includegraphics[width=\textwidth]{assets/uk4.jpg}
         \label{fig:uk4}
     \end{minipage}
-        \caption{self-similarity of the coastline of Britain}
+        \caption{Self-similarity of the coastline of Britain. \textbf{Credit:} \href{https://fractalfoundation.org/OFC/OFC-9-4.html}{Fractal Foundation}.}
 \end{figure}
 
 \subsection{Trees are fractals}
@@ -238,7 +243,7 @@ The branching patterns of trees are quintessential examples of natural fractals.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{assets/fractal-tree.jpg}
-\caption{Fractal tree.}
+\caption{Fractal tree. \textbf{Credit:} \href{https://www.smithsonianmag.com/innovation/fractal-patterns-nature-and-art-are-aesthetically-pleasing-and-stress-reducing-180962738/}{Smithsonian Magazine}.}
 \label{fig:fractal-tree}
 \end{figure}
 
@@ -250,7 +255,7 @@ Mountain ranges display fractal structures, reflecting the complex geological pr
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{assets/fractal-jasper.png}
-\caption{Jasper National Park.}
+\caption{Jasper National Park. \textbf{Credit:} \href{https://earth.google.com/web/@53.07485662,-117.39830832,2023.01943478a,979415.30438438d,35y,0h,0t,0r/data=ChUaDwoJL20vMDFkcF9tGAEgAUICCAE6AwoBMEICCABKDQj___________8BEAA}{Google Earth}}
 \label{fig:fractal-jasper}
 \end{figure}
 
@@ -262,7 +267,7 @@ Weather systems are inherently chaotic and exhibit fractal characteristics. Clou
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{assets/vonkarman-clouds.jpg}
-\caption{Von Karman clouds.}
+\caption{Von Kármán clouds. \textbf{Credit:} \href{https://kirbyandfriends.wordpress.com/wp-content/uploads/2011/02/vonkarman_clouds_1.jpg}{Kirby and Friends}}
 \label{fig:vonkarman-clouds}
 \end{figure}
 
