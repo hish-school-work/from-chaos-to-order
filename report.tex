@@ -53,23 +53,23 @@ In contrast, complex systems consist of numerous interconnected components whose
 
 
 \subsection{Chaos Theory}
-Chaos theory is the study of complex systems that appear random, but in reality are governed by underlying deterministic laws. This means that even though their behaviour seems unpredictable, it's driven by precise rules. The key feature of chaos is "sensitivity to initial conditions," meaning tiny changes at the start can lead to vastly different outcomes. This phenomenon is also known as the "butterfly effect."
+Chaos theory is the study of complex systems that appear random, but in reality are governed by underlying deterministic laws. This means that even though their behaviour seems unpredictable, it's driven by precise rules. The key feature of chaos is ``sensitivity to initial conditions,'' meaning tiny changes at the start can lead to vastly different outcomes. This phenomenon is also known as the ``butterfly effect.''
 
 \subsection{The Butterfly Effect}
 The butterfly effect is the idea that small actions, like the flap of a butterfly’s wings, can cause large, unexpected changes, like altering weather patterns far away. It shows how tiny differences in starting conditions can lead to vastly different outcomes even in a deterministic system, where a very small difference in the beginning can make predictions difficult. Mathematically, this is expressed through exponential divergence of trajectories in phase space.
 
 \subsection{Chaos vs. Classical Mechanics}
-Classical mechanics is the study of systems that behave in a predictable way, like the motion of planets or a swinging pendulum. In classical mechanics, if you know the starting conditions (like the position and speed), you can predict exactly what will happen next. Chaos Theory, on the other hand, studies systems that can’t be predicted easily, even if they follow precise rules. Small changes at the start can lead to wildly different outcomes, making long-term predictions nearly impossible.
+Classical mechanics is the study of systems that behave in a predictable way, like the motion of planets or a swinging pendulum. In classical mechanics, if you know the starting conditions (like the position and speed), you can predict exactly what will happen next. Chaos Theory, on the other hand, studies systems that cannot be predicted easily, even if they follow precise rules. Small changes at the start can lead to wildly different outcomes, making long-term predictions nearly impossible.
 
-This sensitivity to initial conditions is what sets chaotic systems apart from the predictable systems studied in classical mechanics. Chaos Theory helps us understand that just because a system has rules doesn’t mean it’s easy to predict, especially when those rules cause big changes from tiny variations.
+This sensitivity to initial conditions is what sets chaotic systems apart from the predictable systems studied in classical mechanics. Chaos Theory helps us understand that just because a system has rules does not mean it is easy to predict, especially when those rules cause big changes from tiny variations.
 
 \subsection{Attractors in Dynamical Systems}
-An attractor is a pattern or path that a system’s motion tends to follow over time. In classical mechanics, an attractor can be a single point (like an object that has come to a complete stop), a closed loop (a repeating cycle), or a torus (a combination of cycles). Attractors help scientists visualize the behaviour of systems and see if they tend toward stable and predictable paths.
+An attractor is a pattern or path that a system’s motion tends to follow over time. In classical mechanics, an attractor can be a single point (like an object that has come to a complete stop), a closed loop (a repeating cycle), or a torus (a family of cycles or the orbit of an irrational flow). Attractors help scientists visualize the behaviour of systems and see if they tend toward stable and predictable paths.
 
 \subsection{Strange Attractors and Chaos}
 Strange attractors are a special type of attractor found in chaotic systems. Unlike traditional attractors, strange attractors create paths that are detailed and never repeat, even though they follow specific rules. The discovery of strange attractors helped scientists understand how chaotic systems can look random but still follow hidden structures. This complexity led to more questions about how these patterns could be studied and visualized.
 
-Strange attractors reveal that even in chaotic systems, there is an underlying structure that governs their behaviour. These attractors create intricate patterns that appear random at first but show order upon closer examination. A key feature of strange attractors is their self-similarity, meaning their patterns repeat at different scales. This "self-similarity" shows that chaotic systems have repeating structures, even in their randomness. These detailed patterns in strange attractors gave rise to the concept of fractals.
+Strange attractors reveal that even in chaotic systems, there is an underlying structure that governs their behaviour. These attractors create intricate patterns that appear random at first but show order upon closer examination. A key feature of strange attractors is their self-similarity, meaning their patterns repeat at different scales. This ``self-similarity'' shows that chaotic systems have repeating structures, even in their randomness. These detailed patterns in strange attractors gave rise to the concept of fractals.
 
 \section{Fractal Geometry}
 
@@ -81,17 +81,17 @@ Fractals are complex shapes with self-similarity, meaning they look similar at d
 Self-similarity in fractals means that the same patterns repeat at different scales. No matter how much you zoom in or out, you will see similar shapes and structures. For example, the branches of a tree look like smaller versions of the entire tree, and this is a form of self-similarity. In fractals, this property shows how simple rules can create complex and repeating structures.
 
 \subsection{Infinite Detail}
-Fractals exhibit infinite detail because their patterns continue to repeat endlessly, no matter how much you zoom in. Each part of the fractal reveals smaller and smaller structures that look similar to the whole. This means you can keep exploring deeper levels of a fractal, and there will always be more intricate details to discover. This infinite complexity makes fractals useful for modeling natural systems like coastlines, mountains, and clouds.
+Fractals exhibit infinite detail because their patterns continue to repeat endlessly, no matter how much you zoom in. Each part of the fractal reveals smaller and smaller structures that look similar to the whole. This means you can keep exploring deeper levels of a fractal, and there will always be more intricate details to discover. 
 
 \subsection{Benoît Mandelbrot and the Birth of Fractal Geometry}
-Benoît Mandelbrot, a Polish-born French-American mathematician, is renowned for founding the field of Fractal Geometry. In 1982, Mandelbrot published his groundbreaking book, \emph{The Fractal Geometry of Nature}, which introduced the concept of fractals to a wider audience. His groundbreaking work demonstrated that many natural phenomena, such as coastlines, clouds, and mountain ranges, possess fractal characteristics. 
+Benoît Mandelbrot, a Polish-born French-American mathematician, is renowned for founding the field of Fractal Geometry. In 1982, Mandelbrot published his groundbreaking book, \emph{The Fractal Geometry of Nature}, which introduced the concept of fractals to a wider audience. His groundbreaking work demonstrated that many natural phenomena, such as coastlines, clouds, and mountain ranges possess fractal characteristics. 
 
 Mandelbrot's most famous contribution is the Mandelbrot Set, a set of complex numbers that produces a highly intricate and infinitely detailed boundary when plotted. This set not only visualizes the beauty of fractals but also provides deep insights into the behaviour of dynamical systems.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{assets/mandelbrot-set.jpg}
-\caption{The Mandelbrot Set: A quintessential example of a fractal.}
+\includegraphics[width=0.8\textwidth]{assets/mandelbrot-set.jpg}
+\caption{\textbf{Credit:} \href{https://en.wikipedia.org/wiki/Mandelbrot_set\#/media/File:Mandel_zoom_00_mandelbrot_set.jpg}{Mandelbrot Set on Wikipedia}}
 \label{fig:mandelbrot}
 \end{figure}
 
@@ -124,7 +124,7 @@ Mathematically, an IFS consists of a set of functions \( \{f_i\}_{i=1}^N \), whe
 \[
 \| f_i(x) - f_i(y) \| \leq c \| x - y \|.
 \]
-The fractal is generated by starting with an initial shape, often called the "seed," and repeatedly applying each of the contraction mappings to this shape. Over many iterations, the combined effect of these transformations produces intricate and infinitely detailed patterns.
+The fractal is generated by starting with an initial shape, often called the ``seed,'' and repeatedly applying each of the contraction mappings to this shape. Over many iterations, the combined effect of these transformations produces intricate and infinitely detailed patterns.
 
 \subsubsection{Example: Sierpiński Triangle}
 A classic example of a fractal generated by an IFS is the Sierpiński Triangle. It is constructed using three specific contraction mappings that scale and translate an initial equilateral triangle to each of its three corners.
@@ -164,7 +164,7 @@ where \( f \) is a function defining the system's rules. For example, the logist
 \[
 x_{n+1} = r x_n (1 - x_n)
 \]
-where \( r \) is a parameter. As \( r \) varies, the behaviour of the map changes, demonstrating transitions from stable points to chaotic dynamics. Iterated maps help visualize how complex patterns and chaos emerge from simple mathematical rules.
+where \( r \) is a parameter. As \( r \) varies, the behaviour of the map changes, demonstrating transitions from stable points to chaotic dynamics. 
 
 \subsection{Bifurcation Theory and Transition to Chaos}
 Bifurcation theory studies how small changes in a system's parameters can lead to sudden qualitative changes in its behaviour. A common route to chaos is through period-doubling bifurcations. Consider the logistic map:
@@ -175,7 +175,7 @@ As the parameter \( r \) increases, the system undergoes a series of bifurcation
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{assets/bifurcation.png}
+\includegraphics[width=0.7\textwidth]{assets/bifurcation.png}
 \caption{Bifurcation diagram for the logistic map.}
 \label{fig:bifurcation}
 \end{figure}
@@ -192,7 +192,7 @@ where \( d(t) \) is the distance between two trajectories at time \( t \). If \(
 \section{Applications of Fractals and Chaos}
 Fractal patterns in nature often emerge from chaotic processes. These processes involve complex interactions that, while deterministic, produce highly intricate and self-similar structures. For example, clouds, coastlines, trees, and mountains all exhibit fractal-like patterns as a result of these chaotic interactions. 
 
-To effectively utilize fractals in practical applications, scientists develop mathematical models that describe these patterns through specific equations. By defining the rules that generate fractal structures, these models allow us to simulate and predict the behaviour of natural phenomena, enhancing our understanding and ability to manage complex systems.
+To effectively utilize chaos theory and fractals in practical applications, scientists develop mathematical models that describe these patterns through specific equations. By defining the rules that generate fractal structures, these models allow us to simulate and predict the behaviour of natural phenomena, enhancing our understanding and the ability to manage complex systems.
 
 
 \newpage
@@ -208,7 +208,7 @@ Clouds are dynamic structures that exhibit fractal-like motion, characterized by
 \end{figure}
 
 \subsection{Coastlines are fractals}
-Coastlines exhibit fractal-like irregularities, where the complexity of their shape increases as the measurement scale becomes finer. This self-similar property means that the jaggedness of a coastline appears similar at various levels of magnification. Fractal geometry helps in modeling and understanding the intricate boundaries of coastlines, which are influenced by factors like erosion and tidal forces.
+Coastlines exhibit fractal-like irregularities, where the complexity of their shape increases as the measurement scale becomes finer. This self-similar property means that the roughness of a coastline appears similar at various levels of magnification. Fractal geometry helps in modeling and understanding the intricate boundaries of coastlines, which are influenced by factors like erosion and tidal forces.
 
 \begin{figure}[H]
     \centering
